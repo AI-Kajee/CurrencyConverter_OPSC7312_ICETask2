@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                         response: Response<CurrencyResponse>
                     ) {
                         if (response.isSuccessful) {
-                            // Log the JSON response (optional)
+                            // Log the JSON response
                             val currencyResponse = response.body()
                             val jsonResponse = GsonBuilder().create().toJson(currencyResponse)
                             println("JSON Response: $jsonResponse")
